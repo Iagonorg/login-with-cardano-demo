@@ -15,10 +15,14 @@
   background-color: darkgray;
 }
 
-.Login-fb {
-  background-color: rgb(72, 98, 163);
+.Login-Nami {
+  background-color: #48a395;
 }
 
-.Login-mm {
+.Login-Metamask {
   background-color: rgb(255, 125, 0);
+}
+
+.Login-Flint {
+  background-color: rgb(159, 77, 0);
 }

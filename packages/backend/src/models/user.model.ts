@@ -5,4 +5,5 @@ export class User extends Model {
 	public nonce!: number;
 	public publicAddress!: string;
 	public username?: string; // for nullable fields
+	public blockchain!: string;
 }

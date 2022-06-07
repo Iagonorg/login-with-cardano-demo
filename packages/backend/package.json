@@ -21,6 +21,8 @@
 		"@types/express-jwt": "^0.0.42",
 		"@types/jsonwebtoken": "^8.5.0",
 		"@types/validator": "^13.1.0",
+    "@emurgo/cardano-serialization-lib-nodejs": "^10.1.0",
+    "@emurgo/cardano-message-signing-nodejs": "^1.0.1",
 		"body-parser": "^1.18.3",
 		"cors": "^2.8.5",
 		"eth-sig-util": "^3.0.0",
