@@ -2,7 +2,7 @@ import './App.css';
 
 import React, { useEffect, useState } from 'react';
 
-import { Login } from '../Login';
+import { LoginMetamask, LoginNami, LoginFlint } from '../Login';
 import { Profile } from '../Profile/Profile';
 import { Auth } from '../types';
 import logo from './logo.svg';
@@ -47,7 +47,11 @@ export const App = (): JSX.Element => {
 				{auth ? (
 					<Profile auth={auth} onLoggedOut={handleLoggedOut} />
 				) : (
-					<Login onLoggedIn={handleLoggedIn} />
+					<div>
+						<LoginMetamask onLoggedIn={handleLoggedIn} />
+						<LoginNami onLoggedIn={handleLoggedIn} />
+						<LoginFlint onLoggedIn={handleLoggedIn} />
+					</div>
 				)}
 			</div>
 		</div>

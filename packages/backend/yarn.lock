@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@emurgo/cardano-message-signing-nodejs@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@emurgo/cardano-message-signing-nodejs/-/cardano-message-signing-nodejs-1.0.1.tgz#b2fa1f7541055a6c4b8e805492b1a9362bea5835"
+  integrity sha512-PoKh1tQnJX18f8iEr8Jk1KXxKCn9eqaSslMI1pyOJvYRJhQVDLCh0+9YReufjp0oFJIY1ShcrR+4/WnECVZUKQ==
+
+"@emurgo/cardano-serialization-lib-nodejs@^10.1.0":
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/@emurgo/cardano-serialization-lib-nodejs/-/cardano-serialization-lib-nodejs-10.1.0.tgz#4c0c27f82adfd3cd63f9239b2be322c5ea7bf4bc"
+  integrity sha512-6F8gyYzHE3Bu0IVL6XpMQDUWS0UudkZtp2yr/nXNcQlYYp5l6AJbui2V1iuxjQUN0KwKzyH9tDeer+xj8Cs9dA==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -156,6 +166,11 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
+aes-cbc-mac@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/aes-cbc-mac/-/aes-cbc-mac-1.0.1.tgz#a31e52f77bba69163718d0bd291f1527eeea5854"
+  integrity sha512-F1U0qNBNyrW82LRdQvYWKOpljZFnJ9LBUGWNCzCBTC3/+Fki77KgDrfJ+rBVlCpcmMT3jDEGhG61RMVeyHAKog==
+
 ajv@^6.12.3:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
@@ -235,6 +250,13 @@ array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
+
+asn1@^0.2.4:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.6.tgz#0d3a7bb6e64e02a90c0303b31f292868ea09a08d"
+  integrity sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ==
+  dependencies:
+    safer-buffer "~2.1.0"
 
 asn1@~0.2.3:
   version "0.2.4"
@@ -448,6 +470,13 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
+cbor@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/cbor/-/cbor-8.1.0.tgz#cfc56437e770b73417a2ecbfc9caf6b771af60d5"
+  integrity sha512-DwGjNW9omn6EwP70aXsn7FQJx5kO12tX0bZkaTjzdVFM6/7nhA4t0EENocKGx6D2Bch9PE2KzCUf5SceBdeijg==
+  dependencies:
+    nofilter "^3.1.0"
+
 chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
@@ -581,6 +610,18 @@ cors@^2.8.5:
   dependencies:
     object-assign "^4"
     vary "^1"
+
+cose-js@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/cose-js/-/cose-js-0.8.4.tgz#d7929a43fecdeaa6400527d67fbdb324b7dbbf53"
+  integrity sha512-TYt82olRQS/iZyb/qchG4KZSnzVBlOVXJjTCCgwKZUIkqqFyUIA+JG8OQdX5+ZyiWLj9W118Kuf3/jII0Gb/Bg==
+  dependencies:
+    aes-cbc-mac "^1.0.1"
+    any-promise "^1.3.0"
+    cbor "^8.1.0"
+    elliptic "^6.4.0"
+    node-hkdf-sync "^1.0.0"
+    node-rsa "^1.1.1"
 
 create-hash@^1.1.0, create-hash@^1.1.2, create-hash@^1.2.0:
   version "1.2.0"
@@ -906,6 +947,11 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
+
+eyes@>=0.1.6:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/eyes/-/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
+  integrity sha512-GipyPsXO1anza0AOZdy69Im7hGFCNB7Y/NGjDlZGJ3GJJLtwNSb2vrzYrTYJRrRloVx7pl+bhUaTB8yiccPvFQ==
 
 fast-deep-equal@^3.1.1:
   version "3.1.3"
@@ -1655,6 +1701,13 @@ node-gyp@3.x:
     tar "^2.0.0"
     which "1"
 
+node-hkdf-sync@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-hkdf-sync/-/node-hkdf-sync-1.0.0.tgz#657d798641c003f91037b68a3595e05be736d99a"
+  integrity sha1-ZX15hkHAA/kQN7aKNZXgW+c22Zo=
+  dependencies:
+    vows "0.5.13"
+
 node-pre-gyp@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.11.0.tgz#db1f33215272f692cd38f03238e3e9b47c5dd054"
@@ -1671,6 +1724,13 @@ node-pre-gyp@^0.11.0:
     semver "^5.3.0"
     tar "^4"
 
+node-rsa@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/node-rsa/-/node-rsa-1.1.1.tgz#efd9ad382097782f506153398496f79e4464434d"
+  integrity sha512-Jd4cvbJMryN21r5HgxQOpMEqv+ooke/korixNNK3mGqfGJmy0M77WDDzo/05969+OkMy3XW1UuZsSmW9KQm7Fw==
+  dependencies:
+    asn1 "^0.2.4"
+
 nodemon@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.6.tgz#1abe1937b463aaf62f0d52e2b7eaadf28cc2240d"
@@ -1686,6 +1746,11 @@ nodemon@^2.0.6:
     touch "^3.1.0"
     undefsafe "^2.0.3"
     update-notifier "^4.1.0"
+
+nofilter@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nofilter/-/nofilter-3.1.0.tgz#c757ba68801d41ff930ba2ec55bab52ca184aa66"
+  integrity sha512-l2NNj07e9afPnhAhvgVrCD/oy2Ai1yfLpuo3EpiO1jFTsB4sFz6oIfAfSZyQzVpkZQ9xS8ZS5g1jCBgq4Hwo0g==
 
 "nopt@2 || 3":
   version "3.0.6"
@@ -2543,6 +2608,13 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+vows@0.5.13:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/vows/-/vows-0.5.13.tgz#f6fd9ee9c36d3f20bd6680455cff8090c4b29cde"
+  integrity sha1-9v2e6cNtPyC9ZoBFXP+AkMSynN4=
+  dependencies:
+    eyes ">=0.1.6"
 
 which@1:
   version "1.3.1"

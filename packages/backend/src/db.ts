@@ -22,11 +22,13 @@ User.init(
 			allowNull: false,
 			type: STRING,
 			unique: true,
-			validate: { isLowercase: true },
 		},
 		username: {
 			type: STRING,
 			unique: true,
+		},
+		blockchain: {
+			type: STRING,
 		},
 	},
 	{
